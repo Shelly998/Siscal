@@ -42,15 +42,6 @@ for symbol, asset in balance['total'].items():
 # Пример размещения ордера на покупку Bitcoin
 # exchange.create_limit_buy_order('BTC/USDT', 1, 60000)import ccxt
 
-# Укажите ваш ключ API и секретный ключ (если требуется)
-api_key = 'YOUR_API_KEY'
-api_secret = 'YOUR_API_SECRET'
-
-# Создаем объект биржи (в данном случае Binance, но вы можете выбрать другую)
-exchange = ccxt.binance({
-    'apiKey': api_key,
-    'secret': api_secret,
-})
 
 # Получаем баланс аккаунта
 balance = exchange.fetch_balance()
