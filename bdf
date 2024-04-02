@@ -4,11 +4,6 @@ import ccxt
 api_key = 'YOUR_API_KEY'
 api_secret = 'YOUR_API_SECRET'
 
-# Создаем объект биржи (в данном случае Binance, но вы можете выбрать другую)
-exchange = ccxt.binance({
-    'apiKey': api_key,
-    'secret': api_secret,
-})
 
 # Получаем баланс аккаунта
 balance = exchange.fetch_balance()
