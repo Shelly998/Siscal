@@ -3,12 +3,6 @@ import ccxt
 # Укажите ваш ключ API и секретный ключ (если требуется)
 api_key = 'YOUR_API_KEY'
 api_secret = 'YOUR_API_SECRET'
-
-
-# Получаем баланс аккаунта
-balance = exchange.fetch_balance()
-
-# Выводим информацию о балансе
 for symbol, asset in balance['total'].items():
     if asset > 0:
         print(f"Ваш баланс {symbol}: {asset}")
